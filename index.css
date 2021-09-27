@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;    
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    width: 1600px;
+    height: 100vh;
+    background-color: palegreen;
+    padding-top: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+button, input {
+    display: block;
+    margin: 0 auto;    
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;    
+    outline: none;    
+    color: mediumpurple;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    width: 290px;
+}
+
+button {
+    width: 300px;
+}
+
+p {
+    margin: 0;
+}
+
+iframe {    
+    display: none;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: mediumpurple;
+    cursor: pointer;
+}
+
+.modalWindow {
+    width: 1600px;
+    height: 100vh;
+    position: fixed;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+.modalWindow_body {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;       
+}
+
+.modalWindow_content {
+    width: 400px;
+    
+    max-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 10px 10px 10px;
+    font-size: 28px;
+    cursor: default;
+    position: relative;
+    display: flex;
+    overflow: auto;    
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 3px;
+    color: #c1c1c1;
+}
+
+.close:hover {
+    color: black;
+}
+
+

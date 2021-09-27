@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="ru">
+    <meta name="description" content="ModalWindow">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>ModalWindow</title>
+</head>
+    <body>
+        <main>
+            <iframe name="notRedirect"></iframe>
+            <form action="https://rpi-lab2.herokuapp.com/api/message" method="post" target="notRedirect">
+                <input name="userName" placeholder="Имя" required />
+                <input name="message" placeholder="Сообщение" required />
+                <button type="submit">Отправить</button>
+            </form>
+            <button id="button">Открыть окно</button>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
+
